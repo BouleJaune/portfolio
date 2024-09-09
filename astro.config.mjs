@@ -12,7 +12,8 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://boulejaune.xyz/",
+  site: "https://boulejaune.github.io/",
+  // base: "portfolio",
   integrations: [
     sitemap(),
     robotsTxt({
