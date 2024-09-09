@@ -12,16 +12,16 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://boulejaune.github.io/",
-  base: "portfolio",
+  site: "https://boulejaune.github.io",
+  base: "portfolio/",
   integrations: [
-    sitemap(),
-    robotsTxt({
-      sitemap: [
-        "https://boulejaune.xyz/sitemap-index.xml",
-        "https://boulejaune.xyz/sitemap-0.xml",
-      ],
-    }),
+    // sitemap(),
+    // robotsTxt({
+    //   sitemap: [
+    //     "https://boulejaune.xyz/sitemap-index.xml",
+    //     "https://boulejaune.xyz/sitemap-0.xml",
+    //   ],
+    // }),
     solidJs(),
     UnoCSS({ injectReset: true }),
     icon(),
