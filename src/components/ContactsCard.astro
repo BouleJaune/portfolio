@@ -5,21 +5,26 @@ import { Icon } from 'astro-icon/components'
 import { LINKS } from "../lib/constants";
 ---
 
-<Card colSpan="md:col-span-1" rowSpan="md:row-span-3">
+<Card colSpan="md:col-span-1" rowSpan="md:row-span-2">
   <div class="h-full">
     <header class="flex items-center">
       <h1 class="text-white text-xl font-bold">
         Travaillons ensembles !
       </h1>
     </header>
-    <address class="flex flex-col mt-4">
-      <h2 class="text-gray-500">Contact</h2>
-      <p><a href="mailto:someone@example.com" style="color: red">thierry.amettler@proton.me</a></p>
-      <p>France, Toulouse</p>
-    </address>
+    <!-- <address class="flex flex-col mt-4"> -->
+    <!--   <h2 class="text-gray-500">Contact</h2> -->
+    <!--   <p><a href="mailto:someone@example.com" style="color: red">thierry.amettler@proton.me</a></p> -->
+    <!--   <p>France, Toulouse</p> -->
+    <!-- </address> -->
     <div class="flex flex-col mt-4 w-fit">
-      <h2 class="text-gray-500">Réseaux</h2>
       <div class="flex gap-4">
+        <a href={LINKS.mail} aria-label="Mail" target="_blank">
+          <Button aria-label="Mail">
+            <Icon name="ri:mail-line" class="h-6" />
+            <span class="sr-only">Mail</span>
+          </Button>
+        </a>
         <a href={LINKS.github} aria-label="github profile" target="_blank">
           <Button aria-label="github profile">
             <Icon name="ri:github-fill" class="h-6" />
